@@ -1,0 +1,6 @@
+<%- include('../partials/head.ejs') %>
+<% if (car != null){ %>
+    <h1> <%= car.brand + " " + car.model %></h1>
+<% } else { %>
+    <h1>Geen auto gevonden voor <%= path %> </h1>
+<% } %>

@@ -1,0 +1,14 @@
+<%- include('../partials/head.ejs') %>
+
+<h1>Laat maar auto's zien dan!</h1>
+    <ul>
+        <% cars.forEach(function(car){ %>
+        <%= car.brand %>
+        <%= car.model %>
+        <% }) %>
+    </ul>
+
+
+
+
+
