@@ -1,0 +1,27 @@
+{
+  "name": "sss-eindopdracht",
+  "version": "0.0.1",
+  "description": "Final assignment for server-side scripting in node.js",
+  "private": true,
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "~1.9.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "finalassignment",
+    "serverside",
+    "scripting",
+    "nodejs",
+    "course"
+  ],
+  "author": "",
+  "license": "ISC"
+}

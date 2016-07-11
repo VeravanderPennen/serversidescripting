@@ -1,0 +1,18 @@
+<%- include('../partials/head.ejs'); %>
+
+<main>
+  <p><%= title %>
+    You are now logged in.</p></br></br>
+  <p>
+    <ul>
+      <% for(var i = 0; i < users.length; i++ ) { %>
+      <li><a href="/users/edit/<%= users[i].id %>"><%= users[i].name %></a> <a href="/users/remove/<%= users[i].id %>">Unregister</a></li>
+      <% } %>
+    </ul>
+  </p></br></br>
+  <p>If you want, you can log out here: <a href="/users/logout">Logout</a>.</p>
+</main>
+
+
+
+<%- include('../partials/foot.ejs'); %>

@@ -1,0 +1,22 @@
+<%- include('../partials/head.ejs'); %>
+
+
+<section class="login">
+  <% if(error){ %>
+    <div class="error">
+      <%= error %>
+    </div></br>
+  <% } %>
+    <form action="<%= postUrl %>" method="post">
+        <label for="Username">Username:</label>
+        <input type="text" name="username" id="username" value="" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" value="" />
+
+        <input type="submit" value="Login!"/>
+
+        <p><a href="/users/register">Registreer</a></p>
+    </form>
+</section>
+
+  <%- include('../partials/foot.ejs'); %>
