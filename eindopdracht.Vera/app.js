@@ -26,10 +26,10 @@ app.set('view engine', 'ejs'); // view engine, gebruik ejs, dat is onze templati
 //Connect to MYSQL
 app.use(myConnection(mysql, {
     host: 'localhost',
-    user: 'student',
-    password: 'serverSide',
+    user: '*',
+    password: '*',
     port: 3306,
-    database: 'student'
+    database: '*'
     }, 'single'));
 
 // Setup serving static assets
